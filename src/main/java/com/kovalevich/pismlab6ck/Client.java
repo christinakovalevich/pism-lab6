@@ -9,6 +9,6 @@ public class Client {
         InitialContext ctx = new InitialContext();
         MyBeanRemote bean = (MyBeanRemote) ctx.lookup(Config.MAPPED_NAME);
 
-        System.out.println(bean.getSatisfactoryStudentMap());
+        System.out.println(bean.getWorkers());
     }
 }
