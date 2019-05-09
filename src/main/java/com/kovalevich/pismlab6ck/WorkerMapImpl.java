@@ -1,9 +1,10 @@
 package com.kovalevich.pismlab6ck;
 
-import javax.ejb.Stateless;
-import java.util.*;
+import javax.ejb.Stateful;
+import java.util.HashMap;
+import java.util.Map;
 
-@Stateless(mappedName = Config.MAPPED_NAME)
+@Stateful(mappedName = Config.MAPPED_NAME)
 public class WorkerMapImpl implements MyBeanLocal, MyBeanRemote {
 
     private Map<String, String> workersMap;
